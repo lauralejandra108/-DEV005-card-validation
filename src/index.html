@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estas a un paso de lo que quieres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--formulario-->
+    <!--Datos de tarjeta-->
+   <form action="" id="datosTarjeta" class="datos-tarjeta">
+    <div class="tarjeta"> 
+        <label for="inputNumero">Numero de tarjeta</label>
+        <input type="text"  class="numero" id="inputNumero" maxlength="19" autocomplete="off" src="visa.png">
+        <p id="respuesta"></p>
+    </div>
+    <!--nombre-->
+    <div class="tarjeta"> 
+        <label for="inputNombre">Nombre del titular</label>
+        <input type="text" class="nombre" id="inputNombre" autocomplete="off">
+
+    </div>
+    <!--Fecha de expiración-->
+    <div class="flexbox">
+        <div class="Expira">
+            <label for="Expira">Expira</label>
+            <div class="flexbox">
+                <div class="Expira">
+                    <select name="Mes" id="seleMes">
+                        <option disabled selected>Mes</option>
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <div class="Expira">
+                    <select name="Año" id="ano">
+                        <option disabled selected>Año</option>
+                        <option value="1">2023</option>
+                        <option value="2">2024</option>
+                        <option value="3">2025</option>
+                        <option value="4">2026</option>
+                        <option value="5">2027</option>
+                        <option value="6">2028</option>
+                        <option value="7">2029</option>
+                        <option value="8">2030</option>
+                    </select>
+            </div>
+            <div class="CCV"> 
+                <label for="inputCvv">Ccv</label>
+                <input type="text" id="inputCcv" maxlength="3" autocomplete="off">
+            </div>
+
+        </div>
+        <button type="button" class="bttonSend" id = "botton" >Send</button>
+        </div>
+    </div>
+   </form>
+
     <script src="index.js" type="module"></script>
-  </body>
+    
+</body>
 </html>

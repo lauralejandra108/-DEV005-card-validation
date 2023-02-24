@@ -1,0 +1,30 @@
+/* formulario*/
+.datos-tarjeta {
+    background-color: rgb(163, 218, 236);
+    width: 700%;
+    padding: 30px 30px 30px 30px;
+    }
+    .datos-tarjeta label{
+        display: block;
+        color: rgb(135, 136, 138);
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .datos-tarjeta input,
+    .datos-tarjeta select,
+    .bttonSend {
+        border: 2px solid rgba(212, 208, 208, 0.486);
+        font-size: 18;
+        height: 50px;
+        width: 100%;
+        padding: 5px 12px;
+        border-radius: 10px;
+    }
+    .datos-tarjeta input{
+        margin-bottom: 20px;
+    
+    }
+    .datos-tarjeta .flexbox{
+        display: flex;
+        justify-content: space-between ;
+    }
