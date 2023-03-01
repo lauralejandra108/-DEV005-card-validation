@@ -1,7 +1,8 @@
 const validator =  {
   isValid: function (nuValidar) {
     //console.log("estes es mi numero de entrada", nuValidar)
-    const reveNum = nuValidar.split("").reverse();
+    //console.log(typeof nuValidar)
+    const reveNum = nuValidar.split("").reverse(); // reversar mis numeros
     const card = []; 
     const sumTotal = [];
     //console.log("split",nuValidar.split(""))
@@ -33,15 +34,16 @@ const validator =  {
     for (let i= 0;i< sumTotal.length; i++) {
       const numeroConvertido=parseInt(sumTotal[i])
       resutSum = resutSum + numeroConvertido
-      console.log("ESTA ES LA SUMA TOTAL", resutSum) 
+      //console.log("ESTA ES LA SUMA TOTAL", resutSum) 
     }
     const validFinal = resutSum % 10   //es valido si la suma de sus dígitos finales es un múltiplo de 10.
     //console.log("este es el resultado final", validFinal);   
     if (validFinal === 0 ){  //si el total es multiplo de cero ... true
-      console.log(validFinal)
+    
+      //console.log(validFinal)
       return true
     } else { 
-      console.log(validFinal)
+    //console.log(validFinal)
       return false
     }
   },

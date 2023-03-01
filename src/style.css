@@ -1,23 +1,131 @@
+.logo{
+    z-index: 3;
+    position: relative;
+    top: -70px;
+    width: 160px;
+    left: 100px;
+}
+.borde{
+    color: #183f4e;
+    z-index: 2;
+    position: relative;
+    left: 00px;
+    top: 30px;
+    background-color: #183f4e;
+    width: 100%;
+    height: 100px;
+}
+ /* resumen de compra*/
+ .resumen{
+    font-family: 'Tilt Warp', cursive;
+    font-size: 25px;
+    position: relative;
+    top: -50px;
+    left: 0px;
+    color: rgb(142, 136, 136);
+}
+.curso{
+    z-index: 6;
+    font-family: 'Quicksand', sans-serif;   
+     font-size: 18px;
+    position: relative;
+    left: 42%;
+    top: 170px;
+    color: rgb(11, 1, 1);
+}
+.precio{
+    z-index: 6;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: rgb(203, 96, 33);
+    position: relative;
+    left: 45%;
+    top: 180px;
+}
+.facturado{
+    z-index: 6;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: rgb(203, 96, 33);
+    position: relative;
+    left: 30%;
+    top: 330px;
+}
+/* img compra*/
+.borde1{
+    background-color: #f2eee6;
+    z-index: 5;
+    position: relative;
+    width: 510px;
+    height: 280px;
+    left: 400px;
+    top: 50px;
+    border-radius: 10px;
+}
+.imageCurso{
+    z-index: 4;
+    position: relative;
+    width: 180px;
+    left: px;
+    top: 10px;
+    margin: 10px;
+
+}
+.linea{
+    z-index: 6;
+    background-color: #c3c1bd;
+    height: 1px;
+    width: 32%;
+    position: relative;
+    top: 370px;
+   right: 60px;
+  
+}
+/* antes del formulario*/
+.info{
+    position: relative;
+    top: 130px;
+    left: 500px;
+    color: #000000;
+    font-size: 30px;
+
+}
+
+.crea{
+    position: relative;
+    top: 630px;
+    left: 400px;
+    color: #b7b5b0;
+    font-size: 14px;
+}
 /* formulario*/
 .datos-tarjeta {
-    background-color: rgb(163, 218, 236);
-    width: 700%;
-    padding: 30px 30px 30px 30px;
+    background-color: rgb(166, 201, 227);
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    padding:  50px 30px 30px 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 210px;
+    z-index: 1;
+    left: 400px;
     }
     .datos-tarjeta label{
         display: block;
         color: rgb(135, 136, 138);
         margin-bottom: 5px;
-        font-size: 16px;
+        font-size: 19px;
     }
     .datos-tarjeta input,
     .datos-tarjeta select,
     .bttonSend {
         border: 2px solid rgba(212, 208, 208, 0.486);
         font-size: 18;
-        height: 50px;
-        width: 100%;
+        height: 30px;
+        width: 80%;
         padding: 5px 12px;
+        transition: .3 ease all;
         border-radius: 10px;
     }
     .datos-tarjeta input{
@@ -28,3 +136,17 @@
         display: flex;
         justify-content: space-between ;
     }
+    .datos-tarjeta .expira .ccv{
+        width: 100%;
+
+    } 
+    .ccv{
+        width: 20%;
+    }
+    .bttonSend{
+        height: 50px;
+        width: 500px;
+        position: absolute;
+        left: 30px;
+    }
+   
