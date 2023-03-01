@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <div class="borde">borde</div>
+    <img src="../img/logo2.png"  class="logo"> 
+    <div class="crea">Cree una cuenta para acceder a los materiales relacionados con su compra 
+        ¿Ya tienes una cuenta?</div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<hr class="linea">
+<div class="curso">"Curso de yoga "Potenciando tu vida"</div>
+<div class="precio">$89</div>
+<div class="facturado">Facturado hoy (USD)                         $89.00</div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<div class="resumen">Resumen de  tu compra</div>
+<div class="borde1"><img src="../img/tarjeta de presentacion asesor de marketing digital profesional marron y beige.png" class="imageCurso"></div>
+<body>
+    <div class="info">Información de la cuenta</div>
+     <!--formulario-->
+    <!--Datos de tarjeta-->
+   <form id="datosTarjeta" class="datos-tarjeta">
+    <div class="tarjeta"> 
+        <label for="inputNumero">Número de tarjeta</label>
+        <input type="text" class="numero" id="inputNumero" maxlength="19" autocomplete="off" >
+        <p id="respuesta"></p>
+    </div>
+    <!--nombre-->
+    <div class="tarjeta"> 
+        <label for="inputNombre">Nombre del titular</label>
+        <input type="text" class="nombre" id="inputNombre" autocomplete="off">
+    
+    </div>
+    <div class="ccv"> 
+        <label for="inputCvv">Ccv</label>
+        <input type="text" id="inputCcv" maxlength="3" autocomplete="off" >
+     </div>
+    <!--Fecha de expiración-->
+    <div class="flexbox">
+        <div class="Expiras">
+            <label for=" grupo expira">Expira</label>
+            <div class="flexbox">
+                <div class="Expira">
+                    <select name="Mes" id="seleMes">
+                        <option disabled selected>Mes</option>
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <div class="Expira">
+                    <select name="Año" id="ano">
+                        <option disabled selected>Año</option>
+                        <option value="1">2023</option>
+                        <option value="2">2024</option>
+                        <option value="3">2025</option>
+                        <option value="4">2026</option>
+                        <option value="5">2027</option>
+                        <option value="6">2028</option>
+                        <option value="7">2029</option>
+                        <option value="8">2030</option>
+                    </select>
+           </div>
+           <br>
+           <br>
+
+      </div>
+           <button type="button" class="bttonSend" id = "botton">Send</button>
+     </div>
+      </div>
+   </form>
+
+    <script src="index.js" type="module"></script>
+    
+</body>
+</html>
