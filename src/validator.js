@@ -50,9 +50,9 @@ const validator =  {
   },
   maskify: function(numValidar){
     let nuMaski = "";
-    const cuatroDigitos = numValidar.slice(-4); 
-    for (let i = 0; i < numValidar.length -4; i++ ){ //se acceden desde el 0 hasta los -4 numeros 
-      i < numValidar.length - 4 
+    const cuatroDigitos = numValidar.slice(-5); 
+    for (let i = 0; i < numValidar.length -5; i++ ){ //se acceden desde el 0 hasta los -4 numeros 
+      i < numValidar.length - 5 
       nuMaski += "#";
     }
     return nuMaski + cuatroDigitos; 
