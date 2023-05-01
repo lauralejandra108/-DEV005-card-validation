@@ -23,14 +23,15 @@ boton.addEventListener("click", function(){
   function doChange() {  
     document.getElementById('inputNumero').value = encrypt;  
   }  
-});
-/*formulario.addEventListener("keyup", (e)=>{
+})
+numsTarjeta.addEventListener("keyup", (e)=>{
   const numTarj = e.target.value;
   //console.log(e)
-  formulario.inputNumero.value = numTarj
+  numsTarjeta.value = numTarj
     .replace(/\s/g, "")
     .replace(/\D/g, "") 
     .replace(/([0-9]{4})/g, "$1 ")
   //console.log(numsTarjeta)
-});*/
+})
+
 
